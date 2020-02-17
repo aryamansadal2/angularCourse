@@ -1,1 +1,15 @@
-<p>post-create works!</p>
+<h1><p>post-create works!</p></h1>
+<!--        HOW TO GET VALUE WITHOUT 2 WAY DATA BINDING----------------------------------------------
+<input type="text"  #getText/> <br><br>
+<button (click)="onClick(getText)">click</button>
+-->
+<mat-form-field><input matInput type="text" [(ngModel)]="enteredValue"></mat-form-field>
+
+<button (click)="onClick()">click</button>
+<p>{{newPost}}</p>
+
+
+
+
+
+
